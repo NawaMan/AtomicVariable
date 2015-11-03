@@ -1,0 +1,19 @@
+Repository
+
+    <repository>
+        <id>AtomicVariable</id>
+        <url>https://raw.github.com/NawaMan/JPaperCuts/tree/mvn-repo</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+
+
+Dependency
+
+    <dependency>
+      <groupId>nawaman</groupId>
+      <artifactId>AtomicVariable</artifactId>
+      <version>1.0.0</version>
+    </dependency>

@@ -1,0 +1,25 @@
+AtomicVariable is an atomic implementation for a variable.
+It is very similar in concept with Java-built-in AtomicReference.
+AtomicVariable allows more flexible atomic operation to the variable.
+
+For example, AtomicReference has method compareAndSet(...)
+  which will compare the expected object to the object held by the reference.
+The comparison is done by calling equals(...) method.
+However, many times, I found myself needing to compare with more complicate logic.
+For example, check if the last modify field of the object is older than expected.
+This can't be done with AtomicVariable.
+
+Another example is the lazy evaluation of the value to be set.
+AtomicVariable has checkBeforeUpdate(...) method
+  which allows the new value to be determined by the current value ONLY
+    when the current value is checked to be as expected. 
+
+AtomicVariable is a project as part of JPaperCuts which contains tiny projects
+  that solve small problems.
+
+AtomicVariable is distributed under Creative Commons licenses.
+You may make use, modify, distribute the source code without any restrictions.
+You are only asked to voluntarily credit "Nawa Manusitthipol (@nawaman)".
+
+Enjoy coding.
+@nawaman
